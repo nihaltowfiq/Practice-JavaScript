@@ -9,7 +9,7 @@ let series = "";
 
 for (let i = 1; i <= number; i++) {
   let square = i * i;
-  sum += square; //sum = sum + square;
+  sum += square; // sum = sum + square;
   series += square.toString(); // series = series + square.toString();
   if (i == number) {
     continue;
