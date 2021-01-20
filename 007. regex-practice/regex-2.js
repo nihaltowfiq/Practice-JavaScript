@@ -43,6 +43,26 @@ regex = /^\+8801[^0-2][0-9]{8}$/;
 str = "01788888888";
 str = "+8801788888888";
 
+// Shorthand Character Classes;
+regex = /\w/; // Word character - alpha, numeric or _;
+regex = /\w+/; // one or more Word character - alpha, numeric or _;
+regex = /\W/; // non-word character;
+regex = /\W+/; // one or more none word character;
+regex = /\d/; // digit character;
+regex = /\d+/; // one or more digit character;
+regex = /\D/; // non-digit character;
+regex = /\D+/; // one or more non-digit character;
+regex = /\s/; // match white space;
+regex = /\S/; // match non white space;
+regex = /Hellob/; // Word Boundary
+regex = /bHellob/;
+
+// Assertions
+regex = /x(?=yz)/; // Matches x only if x is before y
+regex = /x(?!yz)/;
+
+str = "wegsdg#";
+
 console.log(regex.exec(str));
 
 function regexTest(regex, str) {
